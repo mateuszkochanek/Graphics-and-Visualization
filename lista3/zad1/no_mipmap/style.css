@@ -1,0 +1,33 @@
+html, body {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+}
+
+#canvasGL {
+    border:1px solid #c3c3c3;
+    margin: 10px;
+}
+
+button {
+    margin: 5px;
+}
+
+#canvasControls {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #c3c3c3;
+    margin: 10px;
+}
+
+#instruction {
+    width: 50%;
+}
+
+#instruction > p {
+    text-align: center;
+}

@@ -1,0 +1,59 @@
+ <!--Mateusz Kochanek, 250083
+        Przykład możliwości żółwia 3d. Można poobracać figurę wynikową
+        żeby zobaczyć jak obracanie działa i że jest to rzeczywiście rysowane w 3d.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Turtle3d example</title>
+    <script rel="text/javascript" src="commandExample.js"></script>
+    <script rel="text/javascript" src="turtle3d.js"></script>
+    <script rel="text/javascript" src="wireframe.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h3>Mateusz Kochanek, 250083</h3>
+    </header>
+    <canvas id="myCanvas" width="600" height="600" style="border:1px solid #c3c3c3;margin-bottom: 5px;">
+        Your browser does not support the canvas element.
+    </canvas>
+    <div id="canvasControls">
+        <input id="commandInput">
+        <button id="executeButton">Wykonaj</button>
+    </div>
+    <div>
+    </div>
+    <footer>
+        <p style="align-self:baseline;">
+            <ul>
+                <li><h3>Wpisz komendy zaprezentowane poniżej w pole tekstowe i naciśnij 'Enter' lub przycisk wykonaj:</h3></li>
+                <li>fd ${number} - posuwa żółwia do przodu o $number</li>
+                <li>bk ${number} - posuwa żółwia do tyłu o $number</li>
+                <li>rt ${number} - obraca żółwia o $number stopni w prawo</li>
+                <li>lt ${number} - obraca żółwia o $number stopni w lewo</li>
+                <li>ut ${number} - obraca żółwia o $number stopni w górę</li>
+                <li>dt ${number} - obraca żółwia o $number stopni w dół</li>
+                <li>cc ${string} - zmienia kolor rysowania, najlepiej podawać kolory w formacie "#FF00FF"</li>
+                <li>cw ${number} - zmienia szerokość pędzla</li>
+                <li>off - wyłącza rysowanie</li>
+                <li>on - włącza rysowanie</li>
+            </ul>
+        </p>
+    </footer>
+</body>
+
+</html>

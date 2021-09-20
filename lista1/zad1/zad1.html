@@ -1,0 +1,54 @@
+ <!--Mateusz Kochanek, 250083
+        Na stronie jest pole tekstowe a obok niego przycisk wykonaj.
+        Aby użyć żółwia wystarczy wpisać w pole wybraną komendę (zależnie od komendy
+        musi być po niej również numer), a następnie nacisnąć przycisk wykonaj lub 'Enter'.
+
+        Komendy to:
+            fd ${number} - posuwa żółwia do przodu o $number
+            bk ${number} - posuwa żółwia do tyłu o $number
+            rt ${number} - obraca żółwia o $number stopni w prawo
+            lt ${number} - obraca żółwia o $number stopni w lewo
+            cc ${string} - zmienia kolor rysowania, najlepiej podawać kolory w formacie "#FF00FF"
+            cw ${number} - zmienia szerokość pędzla
+            off - wyłącza rysowanie
+            on - włącza rysowanie
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Turtle zad 1</title>
+    <script rel="text/javascript" src="turtle.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h3>Mateusz Kochanek, 250083</h3>
+    </header>
+    <canvas id="myCanvas" width="800" height="400" style="border:1px solid #c3c3c3;">
+        Your browser does not support the canvas element.
+    </canvas>
+    <div id="canvasControls">
+        <input id="commandInput">
+        <button id="executeButton">Wykonaj</button>
+    </div>
+    <div>
+        <h3>Wpisz komendy w pole tekstowe powyżej i naciśnij 'Enter':</h3>
+        <p>fd ${number} - posuwa żółwia do przodu o $number</p>
+        <p>bk ${number} - posuwa żółwia do tyłu o $number</p>
+        <p>rt ${number} - obraca żółwia o $number stopni w prawo</p>
+        <p>lt ${number} - obraca żółwia o $number stopni w lewo</p>
+        <p>cc ${string} - zmienia kolor rysowania, najlepiej podawać kolory w formacie "#FF00FF"</p>
+        <p>cw ${number} - zmienia szerokość pędzla</p>
+        <p>off - wyłącza rysowanie</p>
+        <p>on - włącza rysowanie</p>
+    </div>
+    <script rel="text/javascript" src="command.js"></script>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

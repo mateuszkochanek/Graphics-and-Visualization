@@ -1,0 +1,78 @@
+ <!--Mateusz Kochanek, 250083
+        Mały plik html pokazujący przykładowy dwunastokąt wykonany grafiką żółwia
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Turtle zad 1</title>
+    <script rel="text/javascript" src="turtle.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h3>Mateusz Kochanek, 250083</h3>
+    </header>
+    <canvas id="myCanvas" width="800" height="400" style="border:1px solid #c3c3c3;">
+        Your browser does not support the canvas element.
+    </canvas>
+    <div id="canvasControls">
+        <input id="commandInput">
+        <button id="executeButton">Wykonaj</button>
+    </div>
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        turtleGraphics = new TurtleGraphics(canvas,0.0,800.0,0.0,400.0);
+        turtleGraphics.changeWidth(2);
+        turtleGraphics.changeColor("#FF0000");
+        turtleGraphics.left(30);
+        turtleGraphics.forward(50);
+        turtleGraphics.left(30);
+        turtleGraphics.forward(50);
+        turtleGraphics.left(30);
+        turtleGraphics.forward(50);
+        turtleGraphics.left(30);
+        turtleGraphics.forward(50);
+        turtleGraphics.left(30);
+        turtleGraphics.forward(50);
+        turtleGraphics.left(30);
+        turtleGraphics.forward(50);
+        turtleGraphics.left(30);
+        turtleGraphics.forward(50);
+        turtleGraphics.left(30);
+        turtleGraphics.forward(50);
+        turtleGraphics.left(30);
+        turtleGraphics.forward(50);
+        turtleGraphics.left(30);
+        turtleGraphics.forward(50);
+        turtleGraphics.left(30);
+        turtleGraphics.forward(50);
+        turtleGraphics.left(30);
+        turtleGraphics.forward(50);
+
+        turtleGraphics.changeWidth(10);
+        turtleGraphics.changeColor('blue');
+        turtleGraphics.turnOff();
+        turtleGraphics.forward(100);
+        turtleGraphics.turnOn();
+        turtleGraphics.right(60);
+        turtleGraphics.forward(100);
+        turtleGraphics.right(120);
+        turtleGraphics.forward(100);
+        turtleGraphics.right(120);
+        turtleGraphics.forward(100);
+        turtleGraphics.right(60);
+        turtleGraphics.forward(100);
+        turtleGraphics.right(120);
+        turtleGraphics.forward(100);
+        turtleGraphics.right(120);
+        turtleGraphics.forward(100);
+    </script>
+    <footer>
+
+    </footer>
+</body>
+
+</html>

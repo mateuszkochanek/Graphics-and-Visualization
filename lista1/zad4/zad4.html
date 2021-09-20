@@ -1,0 +1,57 @@
+<!--Mateusz Kochanek, 250083
+        Jest to prosta gra 3d. W polu generowane są niebieskie sześciany a także jeden czerwony cel.
+        Zadaniem gracza jest dotarcie do czerwonego sześcianu nie dotykając przeszkód.
+
+        Poruszanie się:
+        w - obraca kamerą do góey
+        s - obraca kamerą w dół
+        a - obraca kamerą w lewo
+        d - obraca kamerą w prawo
+        strzałka do przodu - poruszamy się w przestrzeni do przodu
+        strzałka do tyłu - poruszamy się w przestrzeni do tyłu
+        (oczywiście to elementy układu są obracane i przesuwane, kamera gracza w rzeczywistości zostaje w miejscu)
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Game 3d</title>
+    <script rel="text/javascript" src="zad4.js"></script>
+    <script rel="text/javascript" src="game3d.js"></script>
+    <script rel="text/javascript" src="wireframe.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <style>
+        html, body {
+            margin: 0;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-flow: column;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h3>Mateusz Kochanek, 250083</h3>
+    </header>
+    <div>
+        <canvas id="myCanvas" width="1200" height="800" style="border:1px solid #c3c3c3;">
+            Your browser does not support the canvas element.
+        </canvas>
+    </div>
+   
+    <footer>
+        <p style="align-self:baseline;">
+            <ul>
+                <li>w, a, s, d - obracanie kamery</li>
+                <li>strzałka do przodu - ruch do przodu</li>
+                <li>strzałka do tyłu - ruch do tyłu</li>
+            </ul>
+        </p>
+    </footer>
+</body>
+
+</html>

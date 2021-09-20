@@ -1,0 +1,36 @@
+<!--Mateusz Kochanek, 250083
+    Ta wersja OBSŁUGUJE mipmapy, więc filtry od 3 do 6 pokażą się poprawnie!
+    Jest to program pokazujący działanie skyboxa. 5 ścian zastąpiłem zdjęciami a jedną kratką czarno białą
+    dla lepszego zaprezentowania różnych filtrów.
+
+    Filty możemy zmieniać na bieżąco w trakcie działania programu. Każdy obrazek ma narysowany numer od 1-6,
+    i naciskając ten numer zmieniamy filtry w danym obrazku. Filtry są w takiej kolejności:
+        gl.NEAREST,
+        gl.LINEAR,
+        gl.NEAREST_MIPMAP_NEAREST,
+        gl.NEAREST_MIPMAP_LINEAR,
+        gl.LINEAR_MIPMAP_NEAREST,
+        gl.LINEAR_MIPMAP_LINEAR
+    Kliknięcie numerku przełącza nas na kolejny filter w kolejce, pod koniec się zapętla i wraca do NEAREST.
+
+    Po skyboxie można się rozglądać używając strzałek. Na początku trzeba też poczekać ok 5 sek żeby się załadował.
+-->
+
+<!DOCTYPE html >
+<html id="htmlId">
+    <head>
+        <title>WebGl zad 1</title>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <h3>Mateusz Kochanek, 250083, z mipmapami</h3>
+        </header>
+        <canvas id="canvasGL"></canvas>
+        <canvas id="canvasTex" width="512" height="512" style="display: none;"></canvas>
+        <script src="skybox_utils.js"></script>
+        <script src="cube-demo.js"></script>
+    </body>
+</html>

@@ -1,0 +1,49 @@
+<!--Mateusz Kochanek, 250083
+    Jest to program rysujący podany wykres funkcji w 3d. Może być narysowany jako punkty lub jako
+    pole powierzchni. Jest tu równierz zaimplementowane oświetlenie.
+    
+    Wykres możemy kontrolować:
+        strzałka w górę - obraca figurę w górę
+        strzałka w lewno - obraca figurę w lewno
+        strzałka w dół - obraca figurę w dół
+        strzałka w prawo - obraca figurę w prawo
+        w - przesuwa obraz głębiej
+        s - przysuwa obraz do nas
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>zadanie 2</title>
+    <script rel="text/javascript" src="webgl-utils.js"></script>
+    <script rel="text/javascript" src="GraphDrawer.js"></script>
+    <script rel="text/javascript" src="controls.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+        <h3>Mateusz Kochanek, 250083</h3>
+    </header>
+        <div id="canvasContainer">
+            <canvas id="myCanvas" width="800" height="800" style="border:1px solid #c3c3c3;">
+                Your browser does not support the canvas element.
+            </canvas>
+        </div>
+            <div id ="chartControls" class="controls">
+                <p>Funkcja:</p>
+                <input id="functionInput" value="(1+(x/2)*cos(y/2))*cos(y)">
+                <button id="drawPointsGraph">Rysuj punkty</button>
+                <button id="drawTrianglesGraph">Rysuj trójkąty</button>
+                <button id="instructionButton">Pokaż/Ukryj Instrukcje</button>
+            </div>
+    <div id="instruction">
+        
+    </div>
+    <footer>
+    </footer>
+</body>
+
+</html>

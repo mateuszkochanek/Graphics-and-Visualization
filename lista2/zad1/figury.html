@@ -1,0 +1,48 @@
+<!--Mateusz Kochanek, 250083
+        Jest to prosty program umożliwiający testowanie webgl-a. Klikając w canvas wybieramy punkty które program zapamiętuje i rysuje.
+        Następnie przyciskami możemy zmieniać typy obiektów geometrycznych. Przyciśnięcie przycisku SHOW INFO wypisze w przeglądarce
+        atrybuty i uniformy z shaderów.
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebGl zad 1</title>
+    <script rel="text/javascript" src="graphics.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <header>
+        <h3>Mateusz Kochanek, 250083</h3>
+    </header>
+    <canvas id="myCanvas" width="800" height="400" style="border:1px solid #c3c3c3;">
+        Your browser does not support the canvas element.
+    </canvas>
+    <div id="canvasControls">
+        <button id="points">POINTS</button>
+        <button id="line_strip">LINE STRIP</button>
+        <button id="line_loop">LINE LOOP</button>
+        <button id="lines">LINES</button>
+        <button id="triangle_strip">TRIANGLE STRIP</button>
+        <button id="triangle_fan">TRIANGLE FAN</button>
+        <button id="triangles">TRIANGLES</button>
+    </div>
+    <div>
+        <button id="showInfo">SHOW INFO</button>
+    </div>
+    <div id="info"></div>
+    <div id="instruction">
+        <p>Jest to prosty program umożliwiający testowanie webgl-a. Klikając w canvas wybieramy punkty które program zapamiętuje i rysuje.
+        Następnie przyciskami możemy zmieniać typy obiektów geometrycznych. Przyciśnięcie przycisku SHOW INFO wypisze w przeglądarce
+        atrybuty i uniformy z shaderów.</p>
+    </div>
+    <footer>
+        <script rel="text/javascript" src="command.js"></script>
+    </footer>
+</body>
+
+</html>

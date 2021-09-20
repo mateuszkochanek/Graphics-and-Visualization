@@ -1,0 +1,106 @@
+<!--Mateusz Kochanek, 250083
+        Jest to program rysujący płatki Kocha i trójkąty Sierpińskiego, i pozwalający poruszać narysowanymi figurami.
+        Program wyświetli nam canvas i po prawej stronie dwa zestawy inputów. Lewy rysujący Kocha, prawy Sierpińskiego.
+        Wystarczy uzupełnić pola odpowiednimi wartościami i kliknąć przycisk rysowania. 
+        
+        Głębokości działają na zasadznie, im dalej tym mniejsza (są od -1 do -1000). Dla najlepszego efektu zalecam
+        rysowanie na głębokościach od ok -50 do -999, długość np 50.
+
+        Po narysowaniu w pasku pod canvasem wyświetli się kwadrat będący polem wyboru danej figury, ma on id tej figury, a obramówka będzie
+        kolorem jaki wprowadziliśmy. Gdy go wybierzemy podświetli się na zielono.
+        Wybraną figurę możemy kontrolować:
+            w - przesuwa figurę w górę
+            a - przesuwa figurę w lewno
+            s - przesuwa figurę w dół
+            d - przesuwa figurę w prawo
+            strzałka do produ - przesuwa obraz głębiej
+            strzałka do tyłu - przysuwa obraz do nas
+-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>zadanie 2</title>
+    <script rel="text/javascript" src="webgl-utils.js"></script>
+    <script rel="text/javascript" src="figure-manager.js"></script>
+    <script rel="text/javascript" src="controls.js"></script>
+    <script rel="text/javascript" src="koch.js"></script>
+    <script rel="text/javascript" src="sierpinski.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <header>
+        <h3>Mateusz Kochanek, 250083</h3>
+    </header>
+    <article>
+        <div id="canvasContainer">
+            <canvas id="myCanvas" width="1000" height="600" style="border:1px solid #c3c3c3;">
+                Your browser does not support the canvas element.
+            </canvas>
+            <nav id="curveContainer">
+            </nav>
+        </div>
+        <div id="canvasControls">
+            <div id ="kochControls" class="controls">
+                <p>Stopień:</p>
+                <input id="degKochInput">
+                <p>Długość:</p>
+                <input id="lenKochInput">
+                <p>Głębokość:</p>
+                <input id="depKochInput">
+                <p>Kolor:</p>
+                <div class="colors">
+                    <input id="colKochInput1" class="color">
+                    <input id="colKochInput2" class="color">
+                    <input id="colKochInput3" class="color">
+                </div>
+                <button id="drawKochButton">Rysuj Kocha</button>
+            </div>
+            <div id ="sierpControls" class="controls">
+                <p>Stopień:</p>
+                <input id="degSierpInput">
+                <p>Długość:</p>
+                <input id="lenSierpInput">
+                <p>Głębokość:</p>
+                <input id="depSierpInput">
+                <p>Kolor:</p>
+                <div class="colors">
+                    <input id="colSierpInput1" class="color">
+                    <input id="colSierpInput2" class="color">
+                    <input id="colSierpInput3" class="color">
+                </div>
+                <button id="drawSierpButton">Rysuj Sierpińskiego</button>
+            </div>
+            <button id="instructionButton">Pokaż/Ukryj Instrukcje</button>
+        </div>
+    </article>
+    <div id="instruction">
+        <h3>Programu proszę używać ze schowanymi instrukcjami! Są one również w HTML-owym pliku.</h3>
+        <p>Jest to program rysujący płatki Kocha i trójkąty Sierpińskiego, i pozwalający poruszać narysowanymi figurami.
+        Program wyświetli nam canvas i po prawej stronie dwa zestawy inputów. Lewy rysujący Kocha, prawy Sierpińskiego.
+        Wystarczy uzupełnić pola odpowiednimi wartościami i kliknąć przycisk rysowania. </p>
+        
+        <p>Głębokości działają na zasadznie, im dalej tym mniejsza (są od -1 do -1000). Dla najlepszego efektu zalecam
+        rysowanie na głębokościach od ok -50 do -999, długość np 50.</p>
+
+        <p>Po narysowaniu w pasku pod canvasem wyświetli się kwadrat będący polem wyboru danej figury, ma on id tej figury, a obramówka będzie
+        kolorem jaki wprowadziliśmy. Gdy go wybierzemy podświetli się na zielono.
+        Wybraną figurę możemy kontrolować:
+        <ol>
+            <li>w - przesuwa figurę w górę</li>
+            <li>a - przesuwa figurę w lewno</li>
+            <li>s - przesuwa figurę w dół</li>
+            <li>d - przesuwa figurę w prawo</li>
+            <li>strzałka do produ - przesuwa obraz głębiej</li>
+            <li>strzałka do tyłu - przysuwa obraz do nas</li>
+        </ol></p>
+
+    </div>
+    <footer>
+    </footer>
+</body>
+
+</html>
